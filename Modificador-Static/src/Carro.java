@@ -2,7 +2,24 @@ public class Carro{
 
     private String nome;
     private double velocidadeMaxima;
-    private static double velocidadeLimite = 250;
+    private static double velocidadeLimite;
+
+    // 0 - Bloco de inicialização static é executado quando a JVM carregar a classe
+    // 1 - Alocando espaço em memoria pro objeto
+    // 2 - Cada atributo da classe é criado e inicializado com os valores default ou pré definidos
+    // 3 - Bloco de inicialização é executado
+    // 4 - Construtor é executado
+
+    //bloco de inicialização static
+    static{
+        System.out.println("Executado somente uma vez");
+        velocidadeLimite = 250;
+    }
+
+    //bloco de inicialização
+    {
+        System.out.println("Executado toda vez que um objeto é criado");
+    }
 
     public Carro(String nome, double velocidadeMaxima) {
         this.nome = nome;
