@@ -1,4 +1,4 @@
 ## Java Orientação a Objetos
 
-Exercicios de Orientação a Objetos feitos no curso de Java do DevDojo <br>
+Exercicios de Orientação a Objetos feitos no curso de Java <br>
 By Nickolas Alexandre
